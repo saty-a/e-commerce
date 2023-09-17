@@ -1,3 +1,6 @@
+import 'package:ecommerce/routes/app_routes.dart';
+import 'package:ecommerce/styles/app_themes.dart';
+import 'package:ecommerce/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'dart:isolate';
 import 'package:firebase_core/firebase_core.dart';
@@ -8,6 +11,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'firebase_options.dart';
+import 'modules/cart/cubit/cart_cubit.dart';
+import 'modules/customer_reviews/add_review/cubit/add_review_cubit.dart';
+import 'modules/customer_reviews/customer_review/cubit/customer_review_cubit.dart';
+import 'modules/home/cubit/home_cubit.dart';
+import 'modules/notification/cubit/notification_cubit.dart';
+import 'modules/save_address/my_address_book/cubit/my_address_book_cubit.dart';
+import 'modules/wishlist/cubit/wishlist_cubit.dart';
 
 void main() async {
   /// This method call binds the framework to the Flutter engine
