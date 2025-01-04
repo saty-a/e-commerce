@@ -1,7 +1,8 @@
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/utils/app_regex/app_regex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import '../../../../styles/app_colors.dart';
+import '../../../../utils/app_regex/app_regex.dart';
 
 enum FieldStyle { underline, box }
 

@@ -1,20 +1,21 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/authentication/login/textfield_heading_with%20_endText.dart';
-import 'package:ecommerce_app/modules/authentication/login_with_otp/cubit/login_with_otp_cubit.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/app_regex/app_regex.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/buttons_with_icon_row.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/dividers/customizedDivider.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../data/values/images.dart';
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../utils/app_regex/app_regex.dart';
+import '../../../widgets/buttons/buttons_with_icon_row.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../../widgets/dividers/customizedDivider.dart';
+import '../../../widgets/textfields/custom_textfield.dart';
+import '../login/textfield_heading_with _endText.dart';
+import 'cubit/login_with_otp_cubit.dart';
 
 class LoginWithOtpScreen extends StatefulWidget {
   const LoginWithOtpScreen({Key? key}) : super(key: key);

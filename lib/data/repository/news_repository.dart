@@ -1,5 +1,4 @@
-import 'package:ecommerce_app/utils/api_exceptions/exception_handler.dart';
-
+import '../../utils/api_exceptions/exception_handler.dart';
 import '../models/response/news_response.dart';
 import '../models/response/response.dart';
 import '../network/network_requester.dart';

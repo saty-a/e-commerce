@@ -1,10 +1,8 @@
 import 'dart:developer';
 import 'dart:io';
-
 import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
-import 'package:ecommerce_app/utils/api_exceptions/exception_handler.dart';
-
+import '../../utils/api_exceptions/exception_handler.dart';
 import '../values/constants.dart';
 import '../values/env.dart';
 

@@ -1,17 +1,17 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/authentication/enter_otp/cubit/enter_otp_cubit.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/app_regex/app_regex.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_countdown_timer/index.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../utils/app_regex/app_regex.dart';
+import '../../../widgets/buttons/common_button.dart';
+import 'cubit/enter_otp_cubit.dart';
 
 class OtpScreen extends StatefulWidget {
   const OtpScreen({Key? key}) : super(key: key);

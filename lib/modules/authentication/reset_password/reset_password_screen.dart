@@ -1,20 +1,22 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/authentication/reset_password/cubit/reset_password_cubit.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/app_validations/app_validations.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
-import 'package:ecommerce_app/widgets/textfields/text_textfield.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../../data/values/images.dart';
+import '../../../data/values/strings.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/app_validations/app_validations.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../../widgets/textfields/custom_textfield.dart';
+import '../../../widgets/textfields/text_textfield.dart';
+import 'cubit/reset_password_cubit.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   /// Form Keys
   GlobalKey<FormState> resetPasswordKey = GlobalKey<FormState>();
+
+  ResetPasswordScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,23 +1,22 @@
 import 'dart:io' show Platform;
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/data/values/urls.dart';
-import 'package:ecommerce_app/modules/account/widgets/list_row.dart';
-import 'package:ecommerce_app/modules/account/widgets/logout.dart';
-import 'package:ecommerce_app/modules/refer_and_earn/redeem_code.dart';
-import 'package:ecommerce_app/modules/refer_and_earn/share_code.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/dividers/app_divider.dart';
+import 'package:ecommerce/modules/account/widgets/list_row.dart';
+import 'package:ecommerce/modules/account/widgets/logout.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+import '../../data/values/images.dart';
+import '../../data/values/strings.dart';
+import '../../data/values/urls.dart';
+import '../../routes/app_routes.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
 import '../../widgets/bottom_sheet/bottom_sheet.dart';
+import '../../widgets/buttons/common_button.dart';
+import '../../widgets/dividers/app_divider.dart';
 import '../../widgets/icon_label.dart';
+import '../refer_and_earn/redeem_code.dart';
+import '../refer_and_earn/share_code.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({Key? key}) : super(key: key);
@@ -257,7 +256,8 @@ class AccountScreen extends StatelessWidget {
                       Uri url = Uri.parse(
                           Platform.isAndroid ? Urls.playStore : Urls.appStore);
                       try {
-                        await launchUrl(url, mode: LaunchMode.externalApplication);
+                        await launchUrl(url,
+                            mode: LaunchMode.externalApplication);
                       } catch (e) {
                         debugPrint('Url launcher Exception');
                       }

@@ -1,12 +1,12 @@
-import 'package:ecommerce_app/modules/home/cubit/home_cubit.dart';
-import 'package:ecommerce_app/modules/wishlist/cubit/wishlist_cubit.dart';
-import 'package:ecommerce_app/modules/wishlist/widgets/empty_wishlist.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/cards/product_card.dart';
+import 'package:ecommerce/modules/wishlist/widgets/empty_wishlist.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
+import '../../widgets/cards/product_card.dart';
+import '../home/cubit/home_cubit.dart';
+import 'cubit/wishlist_cubit.dart';
 
 class WishlistScreen extends StatelessWidget {
   const WishlistScreen({Key? key}) : super(key: key);
@@ -21,13 +21,14 @@ class WishlistScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text('Wishlist'),
-                state.wishlistProductList.isEmpty ? const SizedBox() :
-                Text(
-                  state.wishlistProductList.length == 1 ?
-                  '${state.wishlistProductList.length} item' :
-                  '${state.wishlistProductList.length} items',
-                  style: Styles.tsR14.copyWith(color: AppColors.grey900),
-                ),
+                state.wishlistProductList.isEmpty
+                    ? const SizedBox()
+                    : Text(
+                        state.wishlistProductList.length == 1
+                            ? '${state.wishlistProductList.length} item'
+                            : '${state.wishlistProductList.length} items',
+                        style: Styles.tsR14.copyWith(color: AppColors.grey900),
+                      ),
               ],
             );
           },
@@ -81,8 +82,9 @@ class WishlistScreen extends StatelessWidget {
                       showFavouriteIcon: true,
                       product: state.wishlistProductList[index],
                       onClearIconTap: () {
-                          context.read<WishlistCubit>().onClearTap(index);
-                          context.read<HomeCubit>().onWishlistTap(state.wishlistProductList[index].id!);
+                        context.read<WishlistCubit>().onClearTap(index);
+                        context.read<HomeCubit>().onWishlistTap(
+                            state.wishlistProductList[index].id!);
                       },
                       //isSelected: state.productList[index].favourite,
                       // onWishlistTap: () {

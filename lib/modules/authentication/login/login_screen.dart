@@ -1,21 +1,22 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/authentication/login/cubit/login_screen_cubit.dart';
-import 'package:ecommerce_app/modules/authentication/login/login_or_register_bottom_text.dart';
-import 'package:ecommerce_app/modules/authentication/login/textfield_heading_with%20_endText.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/app_validations/app_validations.dart';
-import 'package:ecommerce_app/widgets/buttons/buttons_with_icon_row.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/buttons/skip_for_now_button.dart';
-import 'package:ecommerce_app/widgets/dividers/customizedDivider.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
+import 'package:ecommerce/modules/authentication/login/textfield_heading_with%20_endText.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../data/values/images.dart';
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/app_validations/app_validations.dart';
+import '../../../widgets/buttons/buttons_with_icon_row.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../../widgets/buttons/skip_for_now_button.dart';
+import '../../../widgets/dividers/customizedDivider.dart';
+import '../../../widgets/textfields/custom_textfield.dart';
+import 'cubit/login_screen_cubit.dart';
+import 'login_or_register_bottom_text.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);

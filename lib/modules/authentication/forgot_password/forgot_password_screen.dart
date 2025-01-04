@@ -1,16 +1,15 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/authentication/forgot_password/cubit/forgot_password_cubit.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../../widgets/textfields/custom_textfield.dart';
 import '../../../widgets/textfields/text_textfield.dart';
+import 'cubit/forgot_password_cubit.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
   ForgotPasswordScreen({Key? key}) : super(key: key);
