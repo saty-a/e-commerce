@@ -1,8 +1,9 @@
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce_app/data/models/address_model.dart';
-import 'package:ecommerce_app/data/values/images.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:meta/meta.dart';
+
+import '../../../../data/models/address_model.dart';
+import '../../../../data/values/images.dart';
 
 part 'my_address_book_state.dart';
 

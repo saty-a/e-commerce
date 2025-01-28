@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../styles/app_colors.dart';
 
 class SvgIconButton extends StatelessWidget {
   const SvgIconButton({Key? key, this.size = 28, required this.asset})

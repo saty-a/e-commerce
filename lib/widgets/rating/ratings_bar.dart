@@ -1,7 +1,8 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../data/values/images.dart';
 
 class RatingBar extends StatefulWidget {
   RatingBar(

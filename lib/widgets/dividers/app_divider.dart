@@ -1,5 +1,5 @@
-import 'package:ecommerce_app/styles/app_colors.dart';
 import 'package:flutter/material.dart';
+import '../../styles/app_colors.dart';
 
 class AppDivider extends StatelessWidget {
   const AppDivider({Key? key, this.height = 5}) : super(key: key);

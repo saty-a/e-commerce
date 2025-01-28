@@ -1,9 +1,7 @@
-
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce_app/data/values/images.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-
 import '../../../data/models/notification.dart';
+import '../../../data/values/images.dart';
 
 part 'notification_state.dart';
 part 'notification_cubit.freezed.dart';

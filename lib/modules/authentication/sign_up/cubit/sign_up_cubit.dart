@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+
+import '../../../../data/values/strings.dart';
 
 part 'sign_up_cubit.freezed.dart';
 part 'sign_up_state.dart';

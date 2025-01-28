@@ -1,8 +1,7 @@
-import 'package:ecommerce_app/data/values/constants.dart';
-import 'package:ecommerce_app/widgets/cards/transaction_activity_card.dart';
 import 'package:flutter/material.dart';
-
+import '../../data/values/constants.dart';
 import '../../data/values/strings.dart';
+import '../../widgets/cards/transaction_activity_card.dart';
 
 class TransactionActivity extends StatelessWidget {
   const TransactionActivity({Key? key}) : super(key: key);

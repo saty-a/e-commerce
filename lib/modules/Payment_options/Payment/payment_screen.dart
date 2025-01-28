@@ -1,17 +1,18 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/Payment_options/Payment/add_upi_bottomsheet.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/bottom_sheet/bottom_sheet.dart';
-import 'package:ecommerce_app/widgets/common_app_bar.dart';
-import 'package:ecommerce_app/widgets/dividers/app_divider.dart';
-import 'package:ecommerce_app/widgets/payment/credit_debit_row.dart';
-import 'package:ecommerce_app/widgets/payment/wallet_upi_row.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../data/values/images.dart';
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/bottom_sheet/bottom_sheet.dart';
+import '../../../widgets/common_app_bar.dart';
+import '../../../widgets/dividers/app_divider.dart';
+import '../../../widgets/payment/credit_debit_row.dart';
+import '../../../widgets/payment/wallet_upi_row.dart';
+import 'add_upi_bottomsheet.dart';
 
 class Payment extends StatelessWidget {
   const Payment({Key? key}) : super(key: key);
@@ -70,8 +71,8 @@ class Payment extends StatelessWidget {
               color: AppColors.grey300,
             ),
             commonBox(
-                child: Column(
-              children: const [
+                child: const Column(
+              children: [
                 CreditDebitRow(
                   image: Images.visaCard,
                   imageBorderColor: AppColors.grey100,
@@ -141,7 +142,7 @@ class Payment extends StatelessWidget {
             ),
             commonBox(
                 child: Column(
-              children: const [
+              children: [
                 WalletUpiRow(
                   image: Images.googlePay,
                   imageBorderColor: AppColors.grey100,
@@ -177,7 +178,7 @@ class Payment extends StatelessWidget {
             ),
             commonBox(
                 child: Column(
-              children: const [
+              children: [
                 WalletUpiRow(
                   image: Images.razorPay,
                   imageBorderColor: AppColors.grey100,

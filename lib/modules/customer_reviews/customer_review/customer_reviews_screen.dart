@@ -1,21 +1,21 @@
 import 'dart:io';
-
-import 'package:ecommerce_app/modules/customer_reviews/add_review/add_review_screen.dart';
-import 'package:ecommerce_app/modules/customer_reviews/customer_review/cubit/customer_review_cubit.dart';
-import 'package:ecommerce_app/modules/customer_reviews/customer_review/widgets/image_preview.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/dividers/app_divider.dart';
-import 'package:ecommerce_app/widgets/rating/ratings_bar.dart';
-import 'package:ecommerce_app/widgets/buttons/skip_for_now_button.dart';
+import 'package:ecommerce/modules/customer_reviews/customer_review/cubit/customer_review_cubit.dart';
+import 'package:ecommerce/modules/customer_reviews/customer_review/widgets/image_preview.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/buttons/skip_for_now_button.dart';
+import '../../../widgets/dividers/app_divider.dart';
+import '../../../widgets/rating/ratings_bar.dart';
+import '../add_review/add_review_screen.dart';
+
 class CustomerReviewsScreen extends StatelessWidget {
-  CustomerReviewsScreen({Key? key}) : super(key: key);
+  const CustomerReviewsScreen({Key? key}) : super(key: key);
 
   /// List Customer Reviews
 

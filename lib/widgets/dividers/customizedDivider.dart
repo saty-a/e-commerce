@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
 import 'package:flutter/material.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
 
 class CustomizedDivider extends StatelessWidget {
   const CustomizedDivider({Key? key}) : super(key: key);

@@ -1,5 +1,4 @@
-import 'package:ecommerce_app/utils/app_regex/app_regex.dart';
-
+import '../../utils/app_regex/app_regex.dart';
 /// All Validations here.
 
 class AppValidations {

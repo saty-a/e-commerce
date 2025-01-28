@@ -1,8 +1,8 @@
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
 
 class SocialLoginButton extends StatelessWidget {
   const SocialLoginButton(

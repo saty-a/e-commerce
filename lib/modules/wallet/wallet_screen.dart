@@ -1,20 +1,19 @@
-import 'package:ecommerce_app/data/values/constants.dart';
-import 'package:ecommerce_app/modules/account/widgets/list_row.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/cards/transaction_activity_card.dart';
-import 'package:ecommerce_app/widgets/common_app_bar.dart';
-import 'package:ecommerce_app/widgets/dividers/app_divider.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import '../../data/values/constants.dart';
 import '../../data/values/images.dart';
 import '../../data/values/strings.dart';
 import '../../routes/app_routes.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
 import '../../widgets/buttons/common_button.dart';
 import '../../widgets/buttons/oultline_button.dart';
+import '../../widgets/cards/transaction_activity_card.dart';
+import '../../widgets/common_app_bar.dart';
+import '../../widgets/dividers/app_divider.dart';
+import '../../widgets/textfields/custom_textfield.dart';
+import '../account/widgets/list_row.dart';
 
 class WalletScreen extends StatelessWidget {
   const WalletScreen({Key? key}) : super(key: key);

@@ -1,10 +1,10 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/orders/bills_row_widget.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/point_clipper.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
+import '../../data/values/strings.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
+import '../../utils/clipper/point_clipper.dart';
+import 'bills_row_widget.dart';
 
 class BillsDetailsWidget extends StatelessWidget {
   const BillsDetailsWidget(

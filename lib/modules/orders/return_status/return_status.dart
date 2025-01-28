@@ -1,15 +1,14 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/orders/bills_row_widget.dart';
-import 'package:ecommerce_app/modules/orders/order_delivery_status.dart';
-import 'package:ecommerce_app/modules/status/order_return_status_screen.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/point_clipper.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import '../../../data/values/strings.dart';
 import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../utils/clipper/point_clipper.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../status/order_return_status_screen.dart';
+import '../bills_row_widget.dart';
+import '../order_delivery_status.dart';
 
 class ReturnStatus extends StatelessWidget {
   const ReturnStatus({Key? key}) : super(key: key);

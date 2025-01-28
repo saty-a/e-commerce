@@ -1,13 +1,12 @@
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../data/values/images.dart';
 import '../../../data/values/strings.dart';
 import '../../../routes/app_routes.dart';
 import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
 import '../../../widgets/buttons/common_button_2.dart';
 import '../orders_status_bar_horizontal.dart';
 

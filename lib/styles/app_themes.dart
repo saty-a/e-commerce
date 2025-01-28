@@ -1,6 +1,5 @@
-import 'package:ecommerce_app/styles/text_styles.dart';
+import 'package:ecommerce/styles/text_styles.dart';
 import 'package:flutter/material.dart';
-
 import 'app_colors.dart';
 
 class AppThemes {

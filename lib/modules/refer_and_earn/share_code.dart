@@ -1,10 +1,10 @@
 import 'package:dotted_border/dotted_border.dart';
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../../data/values/images.dart';
+import '../../data/values/strings.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
 
 class ShareCodeSheet extends StatelessWidget {
   const ShareCodeSheet({super.key});

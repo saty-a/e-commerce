@@ -1,9 +1,10 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/notification/cubit/notification_cubit.dart';
-import 'package:ecommerce_app/modules/notification/widgets/list_card.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
+import 'package:ecommerce/modules/notification/widgets/list_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../data/values/strings.dart';
+import '../../styles/app_colors.dart';
+import 'cubit/notification_cubit.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({Key? key}) : super(key: key);

@@ -1,11 +1,10 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import '../../core/helper/date_formatter.dart';
+import '../../data/values/images.dart';
 import '../../data/values/strings.dart';
+import '../../styles/app_colors.dart';
 import '../../styles/text_styles.dart';
 
 class TransactionActivityCard extends StatelessWidget {
@@ -59,8 +58,8 @@ class TransactionActivityCard extends StatelessWidget {
           const Spacer(),
           Text(
             success == "true"
-                ? "+${AppStrings.rupeeSymbol}${amount}"
-                : "${AppStrings.rupeeSymbol}${amount}",
+                ? "+${AppStrings.rupeeSymbol}$amount"
+                : "${AppStrings.rupeeSymbol}$amount",
             style: Styles.tsSb16.copyWith(
                 color: success == "true"
                     ? AppColors.success700

@@ -1,7 +1,6 @@
-import 'package:ecommerce_app/data/models/wishlist_product.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../../data/models/wishlist_product.dart';
 
 
 part 'wishlist_state.dart';

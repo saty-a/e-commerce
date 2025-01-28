@@ -1,5 +1,5 @@
-import 'package:ecommerce_app/widgets/buttons/common_button_with_icon.dart';
 import 'package:flutter/material.dart';
+import 'common_button_with_icon.dart';
 
 class SocialLoginButtonsRow extends StatelessWidget {
   const SocialLoginButtonsRow(

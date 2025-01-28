@@ -1,25 +1,23 @@
 import 'dart:io';
-
-import 'package:ecommerce_app/data/models/customer_reviews.dart';
-import 'package:ecommerce_app/data/models/review_model.dart';
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/modules/customer_reviews/add_review/cubit/add_review_cubit.dart';
-import 'package:ecommerce_app/modules/customer_reviews/customer_review/cubit/customer_review_cubit.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/dividers/app_divider.dart';
-import 'package:ecommerce_app/widgets/bottom_sheet/bottom_sheet.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
-import 'package:ecommerce_app/widgets/rating/ratings_bar.dart';
+import 'package:ecommerce/modules/customer_reviews/add_review/cubit/add_review_cubit.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
+import '../../../data/models/customer_reviews.dart';
+import '../../../data/values/images.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/bottom_sheet/bottom_sheet.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../../widgets/dividers/app_divider.dart';
+import '../../../widgets/rating/ratings_bar.dart';
+import '../../../widgets/textfields/custom_textfield.dart';
+
 
 class AddReviewScreen extends StatefulWidget {
   const AddReviewScreen({Key? key}) : super(key: key);
@@ -174,7 +172,7 @@ class _AddReviewScreenState extends State<AddReviewScreen> {
                           return Stack(
                             children: [
                               a[1] == "mp4"
-                                  ? Container(
+                                  ? SizedBox(
                                       height: 120.h,
                                       width: 120.w,
                                       child: VideoApp(
@@ -183,7 +181,7 @@ class _AddReviewScreenState extends State<AddReviewScreen> {
                                     )
                                   /*VideoPlayer(displayVideo(
                               File(_imageFileList[index].path)))*/
-                                  : Container(
+                                  : SizedBox(
                                       height: 120.h,
                                       width: 120.w,
                                       child: Image.file(
@@ -353,60 +351,59 @@ class _AddReviewScreenState extends State<AddReviewScreen> {
   /// Function to Pick Image from Gallery.
   Future<void> pickFromGallery() async {
     XFile? imageFile;
-    final ImagePicker _picker = ImagePicker();
+    final ImagePicker picker = ImagePicker();
 
     /// Pick an image
-    final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+    final XFile? image = await picker.pickImage(source: ImageSource.gallery);
     if (image != null) {
       imageFile = XFile(image.path);
       _imageFileList.add(imageFile);
-      print("Image File Gallery ==>>>> ${imageFile.path}");
-      print("Image File List Abc => ${_imageFileList}");
+      debugPrint("Image File Gallery ==>>>> ${imageFile.path}");
+      debugPrint("Image File List Abc => $_imageFileList");
     }
   }
 
   /// Function to Pick Image from Camera.
   Future<void> pickFromCamera() async {
     XFile? imageFile;
-    final ImagePicker _picker = ImagePicker();
+    final ImagePicker picker = ImagePicker();
 
     /// Pick an image
-    final XFile? image = await _picker.pickImage(source: ImageSource.camera);
+    final XFile? image = await picker.pickImage(source: ImageSource.camera);
     if (image != null) {
       imageFile = XFile(image.path);
       /*_imageFileList.add(imageFile);*/
       _imageFileList.add(imageFile);
-      print("Image File List => ${_imageFileList}");
-      print("Image File Camera ==>>>> ${imageFile.path}");
+      debugPrint("Image File List => $_imageFileList");
+      debugPrint("Image File Camera ==>>>> ${imageFile.path}");
     }
   }
 
   /// Function to Pick Video from Camera.
   Future<void> pickVideoFromCamera() async {
     XFile? videoFile;
-    final ImagePicker _picker = ImagePicker();
+    final ImagePicker picker = ImagePicker();
 
     /// Pick an video
-    final XFile? video = await _picker.pickVideo(source: ImageSource.camera);
+    final XFile? video = await picker.pickVideo(source: ImageSource.camera);
     if (video != null) {
       videoFile = XFile(video.path);
       _imageFileList.add(videoFile);
-      print("Video File ===>> ${videoFile}");
+      debugPrint("Video File ===>> $videoFile");
     }
   }
 
   /// Function to Pick Video from Gallery
   Future<void> pickVideoFromGallery() async {
     XFile? videoFile;
-    final ImagePicker _picker = ImagePicker();
+    final ImagePicker picker = ImagePicker();
 
     /// Pick an video
-    final XFile? video = await _picker.pickVideo(source: ImageSource.gallery);
+    final XFile? video = await picker.pickVideo(source: ImageSource.gallery);
     if (video != null) {
       videoFile = XFile(video.path);
       _imageFileList.add(videoFile);
-      print("Video File List => ${videoFile.name}");
-      print(_imageFileList);
+      debugPrint("Video File List => ${videoFile.name}");
     }
   }
 }
@@ -418,10 +415,10 @@ class VideoApp extends StatefulWidget {
   final File fileName;
 
   @override
-  _VideoAppState createState() => _VideoAppState();
+  VideoAppState createState() => VideoAppState();
 }
 
-class _VideoAppState extends State<VideoApp> {
+class VideoAppState extends State<VideoApp> {
   late VideoPlayerController _controller;
 
   @override

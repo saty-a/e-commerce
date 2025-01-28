@@ -1,14 +1,10 @@
-import 'dart:ui';
-
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../data/values/strings.dart';
 import '../../styles/app_colors.dart';
 import '../../styles/text_styles.dart';
+import '../../widgets/buttons/common_button.dart';
 
 class Coupon extends StatelessWidget{
   @override

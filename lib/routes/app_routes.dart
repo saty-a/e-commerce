@@ -1,61 +1,60 @@
-import 'package:ecommerce_app/modules/Payment_options/Payment/payment_screen.dart';
-import 'package:ecommerce_app/modules/Payment_options/add_card/add_card_screen.dart';
-import 'package:ecommerce_app/modules/about_us/about_us_screen.dart';
-import 'package:ecommerce_app/modules/authentication/enter_otp/otp_screen.dart';
-import 'package:ecommerce_app/modules/authentication/forgot_password/cubit/forgot_password_cubit.dart';
-import 'package:ecommerce_app/modules/authentication/login/cubit/login_screen_cubit.dart';
-import 'package:ecommerce_app/modules/authentication/login/login_screen.dart';
-import 'package:ecommerce_app/modules/authentication/login_with_otp/cubit/login_with_otp_cubit.dart';
-import 'package:ecommerce_app/modules/authentication/login_with_otp/login_with_otp_screen.dart';
-import 'package:ecommerce_app/modules/authentication/reset_password/cubit/reset_password_cubit.dart';
-import 'package:ecommerce_app/modules/authentication/reset_password/reset_password_screen.dart';
-import 'package:ecommerce_app/modules/authentication/sign_up/cubit/sign_up_cubit.dart';
-import 'package:ecommerce_app/modules/authentication/sign_up/sign_up_screen.dart';
-import 'package:ecommerce_app/modules/cart/cart_screen.dart';
-import 'package:ecommerce_app/modules/customer_reviews/add_review/add_review_screen.dart';
-import 'package:ecommerce_app/modules/customer_reviews/customer_review/customer_reviews_screen.dart';
-import 'package:ecommerce_app/modules/customer_reviews/customer_review/widgets/image_preview.dart';
-import 'package:ecommerce_app/modules/dashboard/cubit/dashboard_cubit.dart';
-import 'package:ecommerce_app/modules/home_search/cubit/home_search_cubit.dart';
-import 'package:ecommerce_app/modules/home_search/home_search_screen.dart';
-import 'package:ecommerce_app/modules/notification/notification_screen.dart';
-import 'package:ecommerce_app/modules/onboarding/onboarding_screen/onboarding_screen.dart';
-import 'package:ecommerce_app/modules/onboarding/splash/splash_screen.dart';
-import 'package:ecommerce_app/modules/orders/order_details/order_details.dart';
-import 'package:ecommerce_app/modules/orders/orders_list/orders_list_screen.dart';
-import 'package:ecommerce_app/modules/orders/orders_summary/orders_summary.dart';
-import 'package:ecommerce_app/modules/orders/payment/payment.dart';
-import 'package:ecommerce_app/modules/orders/razorpay/razorpay.dart';
-import 'package:ecommerce_app/modules/orders/return_order/cubit/return_order_cubit.dart';
-import 'package:ecommerce_app/modules/orders/return_status/return_status.dart';
-import 'package:ecommerce_app/modules/product_category/product_category_screen.dart';
-import 'package:ecommerce_app/modules/product_details/cubit/product_deatils_cubit.dart';
-import 'package:ecommerce_app/modules/product_details/product_details_screen.dart';
-import 'package:ecommerce_app/modules/product_subcategories/product_subcategories_screen.dart';
-import 'package:ecommerce_app/modules/save_address/my_address_book/my_address_book_screen.dart';
-import 'package:ecommerce_app/modules/save_address/saved_address_screen/cubit/saved_address_cubit.dart';
-import 'package:ecommerce_app/modules/save_address/saved_address_screen/saved_address_screen.dart';
-import 'package:ecommerce_app/modules/save_address/select_location/select_location_screen.dart';
-import 'package:ecommerce_app/modules/support/support_screen.dart';
-import 'package:ecommerce_app/modules/support_chat/chat_screen.dart';
-import 'package:ecommerce_app/modules/terms_and_policies/terms_and_policies_screen.dart';
-import 'package:ecommerce_app/modules/wishlist/wishlist_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import '../modules/Payment_options/Payment/payment_screen.dart';
+import '../modules/Payment_options/add_card/add_card_screen.dart';
+import '../modules/about_us/about_us_screen.dart';
 import '../modules/authentication/enter_otp/cubit/enter_otp_cubit.dart';
+import '../modules/authentication/enter_otp/otp_screen.dart';
+import '../modules/authentication/forgot_password/cubit/forgot_password_cubit.dart';
 import '../modules/authentication/forgot_password/forgot_password_screen.dart';
+import '../modules/authentication/login/cubit/login_screen_cubit.dart';
+import '../modules/authentication/login/login_screen.dart';
+import '../modules/authentication/login_with_otp/cubit/login_with_otp_cubit.dart';
+import '../modules/authentication/login_with_otp/login_with_otp_screen.dart';
+import '../modules/authentication/reset_password/cubit/reset_password_cubit.dart';
+import '../modules/authentication/reset_password/reset_password_screen.dart';
+import '../modules/authentication/sign_up/cubit/sign_up_cubit.dart';
+import '../modules/authentication/sign_up/sign_up_screen.dart';
+import '../modules/cart/cart_screen.dart';
+import '../modules/customer_reviews/add_review/add_review_screen.dart';
+import '../modules/customer_reviews/customer_review/customer_reviews_screen.dart';
+import '../modules/customer_reviews/customer_review/widgets/image_preview.dart';
+import '../modules/dashboard/cubit/dashboard_cubit.dart';
 import '../modules/dashboard/dashboard_screen.dart';
 import '../modules/faq/faq_screen.dart';
+import '../modules/home_search/cubit/home_search_cubit.dart';
+import '../modules/home_search/home_search_screen.dart';
 import '../modules/notification-settings/cubit/notification_settings_cubit.dart';
 import '../modules/notification-settings/notiifcations_settings_screen.dart';
+import '../modules/notification/notification_screen.dart';
+import '../modules/onboarding/onboarding_screen/onboarding_screen.dart';
 import '../modules/onboarding/splash/cubit/splash_cubit.dart';
+import '../modules/onboarding/splash/splash_screen.dart';
 import '../modules/orders/address/address.dart';
 import '../modules/orders/coupon.dart';
+import '../modules/orders/order_details/order_details.dart';
 import '../modules/orders/order_placed.dart';
+import '../modules/orders/orders_list/orders_list_screen.dart';
+import '../modules/orders/orders_summary/orders_summary.dart';
+import '../modules/orders/payment/payment.dart';
+import '../modules/orders/razorpay/razorpay.dart';
+import '../modules/orders/return_order/cubit/return_order_cubit.dart';
 import '../modules/orders/return_order/return_order.dart';
+import '../modules/orders/return_status/return_status.dart';
+import '../modules/product_category/product_category_screen.dart';
+import '../modules/product_details/cubit/product_deatils_cubit.dart';
+import '../modules/product_details/product_details_screen.dart';
+import '../modules/product_subcategories/product_subcategories_screen.dart';
+import '../modules/save_address/my_address_book/my_address_book_screen.dart';
+import '../modules/save_address/saved_address_screen/cubit/saved_address_cubit.dart';
+import '../modules/save_address/saved_address_screen/saved_address_screen.dart';
+import '../modules/save_address/select_location/select_location_screen.dart';
+import '../modules/support/support_screen.dart';
+import '../modules/support_chat/chat_screen.dart';
+import '../modules/terms_and_policies/terms_and_policies_screen.dart';
 import '../modules/transaction_activity/transaction_activity_screen.dart';
 import '../modules/wallet/wallet_screen.dart';
+import '../modules/wishlist/wishlist_screen.dart';
 
 part 'app_pages.dart';
 
@@ -159,7 +158,7 @@ Map<String, WidgetBuilder> appRoute() {
     Routes.coupon: (context) => Coupon(),
     Routes.orderPlaced: (context) => OrderPlaced(),
     Routes.address: (context) => Address(),
-    Routes.payments: (context) => Payments(),
+    Routes.payments: (context) => const Payments(),
     Routes.returnStatus: (context) => const ReturnStatus(),
   };
 }

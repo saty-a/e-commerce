@@ -1,17 +1,16 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/orders/bills_details_widget.dart';
-import 'package:ecommerce_app/modules/orders/order_change_location.dart';
-import 'package:ecommerce_app/modules/orders/orders_status_bar_horizontal.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button_2.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import '../../../data/values/images.dart';
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/buttons/common_button_2.dart';
+import '../bills_details_widget.dart';
+import '../order_change_location.dart';
+import '../orders_status_bar_horizontal.dart';
 
 class OrdersSummary extends StatelessWidget {
   const OrdersSummary({Key? key}) : super(key: key);

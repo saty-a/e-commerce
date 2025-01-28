@@ -1,7 +1,7 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/orders/order_status_card.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../order_status_card.dart';
 
 /// Order List Screen
 class OrderListScreen extends StatelessWidget {

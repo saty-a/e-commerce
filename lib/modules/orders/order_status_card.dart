@@ -1,9 +1,9 @@
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/status_botton.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
+import '../../widgets/buttons/status_botton.dart';
 
 class OrderStatusCard extends StatelessWidget {
   const OrderStatusCard({

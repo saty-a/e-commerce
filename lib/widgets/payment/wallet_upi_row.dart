@@ -1,9 +1,10 @@
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/oultline_button.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
+import '../buttons/oultline_button.dart';
 
 class WalletUpiRow extends StatelessWidget {
   final String image;

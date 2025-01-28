@@ -1,10 +1,10 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/oultline_button.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../data/values/strings.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
+import '../buttons/oultline_button.dart';
 
 class CreditDebitRow extends StatelessWidget {
   final String image;
@@ -25,7 +25,7 @@ class CreditDebitRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               borderRadius: const BorderRadius.all(Radius.circular(6)),
@@ -54,7 +54,7 @@ class CreditDebitRow extends StatelessWidget {
           isExpanded: false,
           borderColor: AppColors.error600,
           textStyle: Styles.tsSb12.copyWith(color: AppColors.error600),
-          padding: EdgeInsets.symmetric(vertical: 7, horizontal: 20),
+          padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 20),
         )
       ],
     );

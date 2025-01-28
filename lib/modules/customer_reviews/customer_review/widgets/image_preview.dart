@@ -1,8 +1,7 @@
 import 'dart:io';
-
-import 'package:ecommerce_app/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+import '../../../../styles/app_colors.dart';
 
 class ImagePreview extends StatelessWidget {
   final String? imagePath;

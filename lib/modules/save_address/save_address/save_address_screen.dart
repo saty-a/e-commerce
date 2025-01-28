@@ -1,20 +1,21 @@
-import 'package:ecommerce_app/data/models/address_model.dart';
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/save_address/my_address_book/cubit/my_address_book_cubit.dart';
-import 'package:ecommerce_app/modules/save_address/save_address/cubit/save_address_cubit.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/app_regex/app_regex.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
-import 'package:ecommerce_app/widgets/textfields/text_textfield.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../data/models/address_model.dart';
+import '../../../data/values/images.dart';
+import '../../../data/values/strings.dart';
+import '../../../routes/app_routes.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../utils/app_regex/app_regex.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../../widgets/textfields/custom_textfield.dart';
+import '../../../widgets/textfields/text_textfield.dart';
+import '../my_address_book/cubit/my_address_book_cubit.dart';
+import 'cubit/save_address_cubit.dart';
 
 class SaveAddress extends StatelessWidget {
   SaveAddress({Key? key, required this.flathouse, required this.landmark})

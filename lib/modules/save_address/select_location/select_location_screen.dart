@@ -1,24 +1,19 @@
 import 'dart:async';
-
-import 'package:ecommerce_app/modules/home/cubit/home_cubit.dart';
-import 'package:ecommerce_app/modules/save_address/save_address/save_address_screen.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/bottom_sheet/bottom_sheet.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 import '../../../data/values/images.dart';
 import '../../../data/values/strings.dart';
-import '../../../routes/app_routes.dart';
-import '../saved_address_screen/saved_address_screen.dart';
+import '../../../styles/app_colors.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/bottom_sheet/bottom_sheet.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../home/cubit/home_cubit.dart';
+import '../save_address/save_address_screen.dart';
 
 class SelectLocationScreen extends StatefulWidget {
   const SelectLocationScreen({Key? key}) : super(key: key);

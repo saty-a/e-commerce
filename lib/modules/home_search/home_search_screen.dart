@@ -1,15 +1,16 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/home_search/cubit/home_search_cubit.dart';
-import 'package:ecommerce_app/modules/home_search/widgets/empty_home_search.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/dividers/app_divider.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
+import 'package:ecommerce/modules/home_search/widgets/empty_home_search.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../data/values/images.dart';
+import '../../data/values/strings.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
+import '../../widgets/dividers/app_divider.dart';
+import '../../widgets/textfields/custom_textfield.dart';
+import 'cubit/home_search_cubit.dart';
 
 class HomeSearchScreen extends StatelessWidget {
   const HomeSearchScreen({Key? key}) : super(key: key);

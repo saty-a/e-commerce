@@ -1,10 +1,10 @@
-import 'package:ecommerce_app/data/models/wishlist_product.dart';
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../data/models/wishlist_product.dart';
+import '../../data/values/images.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
 
 class ProductCard extends StatelessWidget {
   final Product? product;

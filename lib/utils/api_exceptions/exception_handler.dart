@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:ecommerce_app/data/models/response/error_response.dart';
-import 'package:ecommerce_app/data/values/error_messages.dart';
 import 'package:flutter/material.dart';
+
+import '../../data/models/response/error_response.dart';
+import '../../data/values/error_messages.dart';
 
 class APIException implements Exception {
   final String message;

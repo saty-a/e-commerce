@@ -1,17 +1,18 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/modules/home/cubit/home_cubit.dart';
-import 'package:ecommerce_app/modules/wishlist/cubit/wishlist_cubit.dart';
-import 'package:ecommerce_app/routes/app_routes.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/utils/widget_extensions/widget_extenions.dart';
-import 'package:ecommerce_app/widgets/dividers/app_divider.dart';
-import 'package:ecommerce_app/widgets/cards/product_card.dart';
-import 'package:ecommerce_app/widgets/containers/home_search_container.dart';
+import 'package:ecommerce/utils/widget_extensions/widget_extenions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../data/values/images.dart';
+import '../../data/values/strings.dart';
+import '../../routes/app_routes.dart';
+import '../../styles/app_colors.dart';
+import '../../styles/text_styles.dart';
+import '../../widgets/cards/product_card.dart';
+import '../../widgets/containers/home_search_container.dart';
+import '../../widgets/dividers/app_divider.dart';
+import '../wishlist/cubit/wishlist_cubit.dart';
+import 'cubit/home_cubit.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

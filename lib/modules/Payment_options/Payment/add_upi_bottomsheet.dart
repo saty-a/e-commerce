@@ -1,8 +1,9 @@
-import 'package:ecommerce_app/data/values/strings.dart';
-import 'package:ecommerce_app/styles/text_styles.dart';
-import 'package:ecommerce_app/widgets/buttons/common_button.dart';
-import 'package:ecommerce_app/widgets/textfields/custom_textfield.dart';
 import 'package:flutter/material.dart';
+
+import '../../../data/values/strings.dart';
+import '../../../styles/text_styles.dart';
+import '../../../widgets/buttons/common_button.dart';
+import '../../../widgets/textfields/custom_textfield.dart';
 
 class AddUpiBottomsheet extends StatelessWidget {
   const AddUpiBottomsheet({Key? key}) : super(key: key);

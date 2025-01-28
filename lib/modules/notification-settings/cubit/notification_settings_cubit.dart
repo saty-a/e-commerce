@@ -1,8 +1,7 @@
-import 'package:ecommerce_app/data/values/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-part 'package:ecommerce_app/modules/notification-settings/cubit/notification_settings_state.dart';
+import '../../../data/values/strings.dart';
+part 'notification_settings_state.dart';
 
 class NotificationSettingsCubit extends Cubit<NotificationSettingsState> {
   NotificationSettingsCubit() : super(NotificationSettingsState(

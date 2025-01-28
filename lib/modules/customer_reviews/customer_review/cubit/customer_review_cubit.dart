@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce_app/data/models/customer_reviews.dart';
-import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+
+import '../../../../data/customer_review_model.dart';
 
 part 'customer_review_cubit.freezed.dart';
 part 'customer_review_state.dart';

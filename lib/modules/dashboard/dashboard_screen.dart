@@ -1,21 +1,18 @@
-import 'package:ecommerce_app/data/values/images.dart';
-import 'package:ecommerce_app/modules/account/account_screen.dart';
-import 'package:ecommerce_app/modules/cart/cart_screen.dart';
-import 'package:ecommerce_app/modules/dashboard/cubit/dashboard_cubit.dart';
-import 'package:ecommerce_app/modules/home/cubit/home_cubit.dart';
-import 'package:ecommerce_app/modules/home/home_screen.dart';
-import 'package:ecommerce_app/modules/notification/notification_screen.dart';
-import 'package:ecommerce_app/modules/save_address/location_permission/location_permission.dart';
-import 'package:ecommerce_app/styles/app_colors.dart';
-import 'package:ecommerce_app/widgets/bottom_sheet/bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
-
-import '../cart/cart_empty_state.dart';
-
+import '../../data/values/images.dart';
+import '../../styles/app_colors.dart';
+import '../../widgets/bottom_sheet/bottom_sheet.dart';
+import '../account/account_screen.dart';
+import '../cart/cart_screen.dart';
+import '../home/cubit/home_cubit.dart';
+import '../home/home_screen.dart';
+import '../notification/notification_screen.dart';
+import '../save_address/location_permission/location_permission.dart';
+import 'cubit/dashboard_cubit.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
